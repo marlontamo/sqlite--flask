@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %} create person  {% endblock %}
+{% block content %}
+    
+    <h1>Hello World!</h1>
+    
+<div class="col-md-4"></div>
+<div class="col-md-4 text-center">
+    <h2>Create User</h2>
+    <form action="/save" method="POST">
+        <label for="inputName" class="form-label">name</label>
+    <input type="text" id="inputName" name="name" class="form-control" aria-describedby="passwordHelpBlock">
+    <label for="inputAge" class="form-label">Age</label>
+    <input type="text" id="inputAge" name="age" class="form-control" aria-describedby="passwordHelpBlock">
+    <label for="inputjob" class="form-label">Job</label>
+    <input type="text" id="inputJob" name="job" class="form-control" aria-describedby="passwordHelpBlock">
+       <input type='submit' class="btn btn-sm btn-primary"/>
+    </form>
+</div>
+<div class="col-md-4"></div>
+
+{% endblock %}
